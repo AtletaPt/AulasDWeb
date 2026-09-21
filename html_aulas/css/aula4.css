@@ -1,0 +1,18 @@
+.nav{
+    text-align: right;
+}
+
+.nav-link{
+    padding: 0.5em;
+    color: black;
+    text-decoration: none;
+}
+
+.nav-link:hover{
+    color: white;
+    background-color: black;
+}
+
+.nav-link.ativo{
+    text-decoration: underline;
+}

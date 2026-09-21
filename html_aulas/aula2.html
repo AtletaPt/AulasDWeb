@@ -1,0 +1,61 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula 2</title>
+    <style>
+      .div-300 {
+        width: 300px;
+        border: solid black 2px !important;
+        /* o elemento "!important" sobrescreve outras regras CSS */
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="aula1.html" target="_blank">Link para aula 1</a>
+      <!-- o atributo "href" é do tipo inline e serve para criar links -->
+      <!-- target="_blank" abre o link em uma nova aba -->
+    </nav>
+
+    <div style="width: 500px">
+      <img
+        src="../html_aulas/imagens_aulas/MARC1911.JPG"
+        alt="podio GRE clubes 3ª divisão"
+        style="width: 100%"
+      />
+      <!-- o atributo "src" é do tipo inline e serve para indicar a localização da imagem -->
+      <!-- o atributo "alt" é do tipo inline e serve para indicar uma descrição da imagem -->
+    </div>
+
+    <div class="div-300">
+      <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ul>
+      <!-- o atributo ul serve para criar listas não ordenadas -->
+    </div>
+
+    <div>
+      <table>
+        <tr>
+          <th>Ano</th>
+          <th>Nome</th>
+          <th>Nota Final</th>
+        </tr>
+        <tr>
+          <td>1º</td>
+          <td>Carlos</td>
+          <td>15</td>
+        </tr>
+        <tr>
+          <td>1º</td>
+          <td>Zé</td>
+          <td>12</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
