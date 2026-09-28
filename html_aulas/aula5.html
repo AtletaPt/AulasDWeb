@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula 5</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      #equipa {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; /* distribui o espaço entre os elementos no eixo x */
+        align-items: center; /* alinha os elementos no eixo y */
+      }
+      .caixa {
+        color: white;
+        text-align: center;
+        background-color: red;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 5px;
+
+        flex-grow: 1; /* permite que as caixas cresçam igualmente */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="equipa">
+      <div class="caixa">caixa 1</div>
+      <div class="caixa">caixa 2</div>
+      <div class="caixa">caixa 3</div>
+    </div>
+  </body>
+</html>
