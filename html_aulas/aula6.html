@@ -7,15 +7,42 @@
     <style>
       #avatar {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
 
         background-color: #e1c29f;
         border-radius: 10px;
       }
       .box {
         text-align: center;
+        padding: 7.5px;
+      }
+      @media (min-width: 640px) {
+        #avatar {
+          flex-direction: row;
+        }
+      }
+      #avatar-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        background-color: #9ae4d4;
+        border-radius: 10px;
         padding: 10px;
+      }
+      .box-grid {
+        text-align: center;
+        padding: 7.5px;
+        border: 1px solid black;
+      }
+      @media (min-width: 640px) {
+        #avatar-grid {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+        }
       }
     </style>
   </head>
@@ -30,6 +57,21 @@
         <h1>carrinho</h1>
       </div>
       <div class="box">
+        <img src="imagens_aulas/avatares/avatar3.svg" alt="avatar3" />
+        <h1>camião</h1>
+      </div>
+    </div>
+
+    <div id="avatar-grid">
+      <div class="box-grid">
+        <img src="imagens_aulas/avatares/avatar1.svg" alt="avatar1" />
+        <h1>comando</h1>
+      </div>
+      <div class="box-grid">
+        <img src="imagens_aulas/avatares/avatar2.svg" alt="avatar2" />
+        <h1>carrinho</h1>
+      </div>
+      <div class="box-grid">
         <img src="imagens_aulas/avatares/avatar3.svg" alt="avatar3" />
         <h1>camião</h1>
       </div>
