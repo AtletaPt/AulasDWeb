@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="pt-PT" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Uma viagem pelos planetas do Sistema Solar."
+    />
+    <title>Sistema Solar | Início</title>
+    <!-- Script do Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      /* Configuração das cores e estilos base personalizados para mapear o CSS antigo */
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              fundo: "#0b1020",
+              superficie: "#161d33",
+              texto: "#e6e9f2",
+              "texto-suave": "#a3abc2",
+              destaque: "#ff8a3d",
+              "destaque-escura": "#e06a1c",
+              borda: "#2a3352",
+            },
+            borderRadius: {
+              custom: "12px",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="m-0 font-sans text-base leading-relaxed text-texto bg-fundo">
+    <!-- ===== CABEÇALHO ===== -->
+    <header
+      class="bg-superficie border-b border-borda sticky top-0 z-10"
+      id="topo"
+    >
+      <div
+        class="w-full max-w-[1100px] mx-auto px-4 flex flex-col md:flex-row items-center md:justify-between gap-2 py-3"
+      >
+        <a
+          href="index.html"
+          class="text-xl font-bold text-texto no-underline hover:text-destaque transition-colors"
+          >☀ Sistema Solar</a
+        >
+
+        <!-- Navegação principal -->
+        <nav aria-label="Navegação principal">
+          <ul class="list-none m-0 p-0 flex gap-4">
+            <li>
+              <a
+                href="index.html"
+                class="text-texto border-b-2 border-destaque py-1 no-underline transition-colors"
+                >Início</a
+              >
+            </li>
+            <li>
+              <a
+                href="#planetas"
+                class="text-texto-suave hover:text-texto hover:border-b-2 hover:border-destaque py-1 no-underline transition-colors"
+                >Planetas</a
+              >
+            </li>
+            <li>
+              <a
+                href="marte.html"
+                class="text-texto-suave hover:text-texto hover:border-b-2 hover:border-destaque py-1 no-underline transition-colors"
+                >Marte</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ===== SECÇÃO PRINCIPAL ===== -->
+<main>
+  
+</main>
+    <!-- ===== RODAPÉ ===== -->
+    <footer
+      class="bg-superficie border-t border-borda py-6 text-sm text-texto-suave"
+    >
+      <div
+        class="w-full max-w-[1100px] mx-auto px-4 flex flex-col md:flex-row items-center md:justify-between gap-2 text-center md:text-left"
+      >
+        <p class="m-0">
+          Projeto escolar · Sistema Solar<br />
+          <small class="text-xs opacity-80"
+            >Foto de Marte: ESA &amp; MPS for OSIRIS Team (CC BY-SA 3.0
+            IGO)</small
+          >
+        </p>
+        <ul class="list-none m-0 p-0 flex flex-wrap justify-center gap-4">
+          <li>
+            <a
+              href="https://science.nasa.gov/solar-system/"
+              target="_blank"
+              rel="noopener"
+              class="text-destaque no-underline hover:text-[#ffb27a] focus:text-[#ffb27a]"
+              >NASA</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.esa.int/Science_Exploration/Space_Science"
+              target="_blank"
+              rel="noopener"
+              class="text-destaque no-underline hover:text-[#ffb27a] focus:text-[#ffb27a]"
+              >ESA</a
+            >
+          </li>
+          <li>
+            <a
+              href="#topo"
+              class="text-destaque no-underline hover:text-[#ffb27a] focus:text-[#ffb27a]"
+              >Voltar ao topo ↑</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
