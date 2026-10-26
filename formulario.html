@@ -10,7 +10,11 @@
     <div class="w-4xl mx-auto mt-64 border p-8">
       <p class="text-2xl">Formulário</p>
 
-      <form action="formulario.html" method="post">
+      <form
+        action="formulario.html"
+        method="post"
+        enctype="multipart/form-data"
+      >
         <div class="flex flex-col mt-4">
           <label for="nome">Nome *</label>
           <input
@@ -61,10 +65,77 @@
               accept="image/*"
             />
           </div>
+          <div class="flex flex-col">
+            <label for="codigo-postal">Código Postal</label>
+            <input
+              type="text"
+              id="codigo-postal"
+              name="codigo-postal"
+              class="border p-2 user-invalid:border-red-500"
+              placeholder="Ex: 1234-567"
+              required
+              pattern="[0-9]{4}-[0-9]{3}"
+            />
+          </div>
+          <div class="flex flex-col">
+            <label for="opcao">Género</label>
+            <select
+              id="opcao"
+              name="opcao"
+              class="border p-2 user-invalid:border-red-500"
+              required
+            >
+              <option value="">Selecione um género</option>
+              <option value="masc">Masculino</option>
+              <option value="fem">Feminino</option>
+              <option value="outro">Outro</option>
+            </select>
+          </div>
+
+          <div class="flex flex-col">
+            <label for="">Deseja assinar a newsletter?</label>
+            <div class="flex gap-5 mt-2">
+              <label for="rb1"
+                ><input
+                  type="radio"
+                  id="rb1"
+                  name="newsletter"
+                  value="s"
+                  required
+                />
+                Sim</label
+              >
+              <label for="rb2"
+                ><input
+                  type="radio"
+                  id="rb2"
+                  name="newsletter"
+                  value="n"
+                  required
+                />
+                Não</label
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col mt-10">
+          <label for="mensagem">Observações</label>
+          <textarea
+            class="border p-2"
+            name="mensagem"
+            id="mensagem"
+            cols="30"
+            rows="5"
+            placeholder="Escreva aqui a sua mensagem"
+          ></textarea>
         </div>
 
         <div class="mt-4">
-          <button type="submit" class="bg-blue-500 text-white p-2 rounded">
+          <button
+            type="submit"
+            class="bg-blue-500 text-white p-2 rounded hover:bg-blue-600"
+          >
             Enviar
           </button>
         </div>
